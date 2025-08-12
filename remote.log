@@ -1,2 +1,3 @@
 727f466f-60c3-4778-90b2-b2332856c2f8 chunk=1GB embedcreds=no encryption=none externaltype=rclone name=dandi-dandisets-dropbox prefix=dandi-dandisets/annexstore rclone_layout=lower target=dandi-dandisets-dropbox type=external timestamp=1755032640s
+cf13d535-b47c-5df6-8590-0793cb08a90a autoenable=true encryption=none externaltype=datalad name=datalad type=external timestamp=1755032642s
 eb2c3841-588c-494b-ba27-bee88111c1c9 cost=300 sameas-name=dandiapi sameas-uuid=00000000-0000-0000-0000-000000000001 type=web urlinclude=*//api.dandiarchive.org/* timestamp=1755032637s
