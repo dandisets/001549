@@ -3,31 +3,85 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.10/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
-  status: dandi:EmbargoedAccess
+  status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 303690160
+  numberOfFiles: 31
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
-citation: Neural Spiking Data Responding to Transcranial Focused Ultrasound Stimulation
-  in Freely Moving Rats (2025). (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001549/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Rattus norvegicus - Norway rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - Units
+citation: Kim, Min Gon; Yu, Kai; Herring, Ethan; Morrison, Sara; He, Bin (2025) Neural
+  Spiking Data Responding to Transcranial Focused Ultrasound Stimulation in Freely
+  Moving Rats (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001549/draft
 contributor:
-- awardNumber: 1 R01 NS 124564-01
+- awardNumber: R01 NS124564
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- awardNumber: RF1NS131069
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- email: mingonk@andrew.cmu.edu
+  includeInCitation: true
+  name: Kim, Min Gon
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- includeInCitation: true
+  name: Yu, Kai
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- includeInCitation: true
+  name: Herring, Ethan
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- includeInCitation: true
+  name: Morrison, Sara
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- includeInCitation: true
+  name: He, Bin
+  roleName:
+  - dcite:ProjectLeader
+  - dcite:Supervision
+  schemaKey: Person
 dateCreated: '2025-08-12T20:40:15.567112+00:00'
-description: We performed Pavlovian cue-concurrent transcranial focused ultrasound
+description: 'We performed Pavlovian cue-concurrent transcranial focused ultrasound
   stimulation (tFUS) stimulation during intracranial single-neuron recordings using
   a wearable array transducer targeting the nucleus accumbens (NAc) in awake and behaving
-  rats.   The stimulation was delivered with a 64-element array transducer weighing
-  3 g without the cable connector and 9 g with the connector. Experimental parameters
-  included pulse repetition frequency (PRF), tone burst duration (TBD), total sonication
-  time, and input voltage (pressure level).   For example, the notation mou05_50_50_50_5
-  indicates the animal number, PRF, input voltage, TBD(microseconds), and total sonication
-  time, respectively.
+  rats.   The stimulation was delivered with a 64-element array transducer. Experimental
+  parameters included pulse repetition frequency (PRF: Hz), tone burst duration (TBD),
+  total sonication time, and input voltage (pressure level).   For example, the notation
+  mou05_50_50_50_5 indicates the animal number, PRF (Hz), input voltage (v), TBD(microseconds),
+  and total sonication time (sec), respectively. '
+ethicsApproval: []
 id: DANDI:001549/draft
 identifier: DANDI:001549
 license:
@@ -36,8 +90,10 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001549/versions/draft/assets/
 name: Neural Spiking Data Responding to Transcranial Focused Ultrasound Stimulation
   in Freely Moving Rats
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
 url: https://dandiarchive.org/dandiset/001549/draft
 version: draft
+wasGeneratedBy: []
