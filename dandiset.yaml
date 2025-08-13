@@ -77,10 +77,11 @@ description: 'We performed Pavlovian cue-concurrent transcranial focused ultraso
   stimulation (tFUS) stimulation during intracranial single-neuron recordings using
   a wearable array transducer targeting the nucleus accumbens (NAc) in awake and behaving
   rats.   The stimulation was delivered with a 64-element array transducer. Experimental
-  parameters included pulse repetition frequency (PRF: Hz), tone burst duration (TBD),
-  total sonication time, and input voltage (pressure level).   For example, the notation
-  mou05_50_50_50_5 indicates the animal number, PRF (Hz), input voltage (v), TBD(microseconds),
-  and total sonication time (sec), respectively. '
+  parameters included pulse repetition frequency (PRF), tone burst duration (TBD),
+  total sonication time, and input voltage to Vantage ultrasound system (can be converted
+  to pressure level). For example, the notation mou05_50_50_50_5 indicates the animal
+  number, PRF (Hz), input voltage (v), TBD (microseconds), and total sonication time
+  (sec), respectively. '
 ethicsApproval: []
 id: DANDI:001549/draft
 identifier: DANDI:001549
